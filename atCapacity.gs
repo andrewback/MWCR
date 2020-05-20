@@ -31,7 +31,7 @@ function Capacity(e) {
   
   Logger.log('ordersToday: ' + ordersToday.toString());
   
-  var msg = 'Sorry, we have received too many orders today! Check back tomorrow for fresh roasted coffee.';
+  var msg = 'Sorry, we have received too many orders today! \n \n'+'Please check back again tomorrow.';
   
   if (ordersToday >= 3) {
     form.setAcceptingResponses(false);
