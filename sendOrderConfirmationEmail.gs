@@ -13,7 +13,6 @@
 
 
 function onFormSubmit(e) {
-  var values = e.namedValues;
   var price;
   var paymentURL;
   var HtmlOrder = '<ul>';
@@ -30,7 +29,7 @@ function onFormSubmit(e) {
   
   //Calculate the total price of the order ("price") and create a custom payment URL
   price = (Number(String(e.namedValues["How much coffee would you like?"]).substring(0,1)))*8+3
-  paymentURL = 'https://paypal.me/morningwalkroasters/' + String(price)
+  paymentURL = '<personal_paypal.me_link>/' + String(price)
   
   //Add the total price of the order as the final bullet of the order summary
   HtmlOrder += '<li>' + '<strong>Order Total: $' + price + '</strong></li></ul>';
