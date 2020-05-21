@@ -5,9 +5,9 @@
 //                there is enough capacity to handle their order. If not, the form displays a message
 //                indicating that too many orders have been received but that they should try again tomorrow.
 
-function Capacity(e) {
-  var form = FormApp.openById('1qPrxl5DT0lWOMNM0PGdJtIc3JJYVw3OFKSywOusrlyM');
-  var ss = SpreadsheetApp.openById("1q63y8_q_WcalzxQDNDkSK2vi_hQAxbVI54pcfKQxJPw");
+function atCapacity(e) {
+  var form = FormApp.openById('//<formId>');
+  var ss = SpreadsheetApp.openById('//<spreadsheetId>');
   var sheet = ss.getActiveSheet();
   var data = sheet.getDataRange().getValues();
   var curDate = Utilities.formatDate(new Date(), "GMT+1", "MM/dd/yyyy")
